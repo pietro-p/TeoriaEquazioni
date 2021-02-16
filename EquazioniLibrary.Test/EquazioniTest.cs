@@ -21,5 +21,23 @@ namespace EquazioniLibrary.Test
             bool prova = Equazioni.IsDetermined(a);
             Assert.AreEqual(valore_aspettato, prova);
         }
+        [TestMethod]
+        public void TestIsInconsistedTrue()
+        {
+            double a = 0;
+            double b = 6;
+            bool valore_aspettato = true;
+            bool prova = Equazioni.IsInconsisted(a, b);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+        [TestMethod]
+        public void TestIsInconsistedFalse()
+        {
+            double a = 5;
+            double b = 6;
+            bool valore_aspettato = false;
+            bool prova = Equazioni.IsInconsisted(a, b);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
     }
 }
