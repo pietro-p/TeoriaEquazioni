@@ -26,5 +26,13 @@ namespace EquazioniLibrary
                 return true;
             return false;
         }
+        public static double Delta(double a, double b, double c)
+        {
+            double b2 = b * b;
+            double n = a * c;
+            double n2 = n * 4;
+            double delta = b2 - n2;
+            return delta;
+        }
     }
 }

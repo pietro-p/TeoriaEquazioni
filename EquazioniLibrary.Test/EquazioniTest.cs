@@ -55,5 +55,25 @@ namespace EquazioniLibrary.Test
             bool prova = Equazioni.IsDegree2(x);
             Assert.AreEqual(valore_aspettato, prova);
         }
+        [TestMethod]
+        public void TestDelta()
+        {
+            double a = 2;
+            double b = 4;
+            double c = 4;
+            double valore_aspettato = -16;
+            double prova = Equazioni.Delta(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+        [TestMethod]
+        public void TestDelta2()
+        {
+            double a = 3;
+            double b = 6;
+            double c = 2;
+            double valore_aspettato = 12;
+            double prova = Equazioni.Delta(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
     }
 }
