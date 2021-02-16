@@ -39,5 +39,21 @@ namespace EquazioniLibrary.Test
             bool prova = Equazioni.IsInconsisted(a, b);
             Assert.AreEqual(valore_aspettato, prova);
         }
+        [TestMethod]
+        public void TestIsDegree2True()
+        {
+            double x = 2;
+            bool valore_aspettato = true;
+            bool prova = Equazioni.IsDegree2(x);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+        [TestMethod]
+        public void TestIsDegree2False()
+        {
+            double x = 1;
+            bool valore_aspettato = false;
+            bool prova = Equazioni.IsDegree2(x);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
     }
 }

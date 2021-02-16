@@ -20,5 +20,11 @@ namespace EquazioniLibrary
             }
             return false;
         }
+        public static bool IsDegree2(double x)
+        {
+            if (x == 2)
+                return true;
+            return false;
+        }
     }
 }
