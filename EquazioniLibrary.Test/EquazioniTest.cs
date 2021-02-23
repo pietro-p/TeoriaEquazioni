@@ -75,5 +75,46 @@ namespace EquazioniLibrary.Test
             double prova = Equazioni.Delta(a, b, c);
             Assert.AreEqual(valore_aspettato, prova);
         }
+        [TestMethod]
+        public void result()
+        {
+            double a = 1;
+            double b = -3;
+            double c = 2;
+            string valore_aspettato = ($"{2} {1}");         
+            string prova = Equazioni.result(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);          
+        }
+        [TestMethod]
+        public void TestEquationDegree1()
+        {
+            double a = 0;
+            double b = 0;
+            double c = 6;
+            string valore_aspettato = "Indeterminato";
+            string prova = Equazioni.EquationDegree1(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+        [TestMethod]
+        public void TestEquationDegree2()
+        {
+            double a = 3;
+            double b = 0;
+            double c = 6;
+            string valore_aspettato = "Impossibile";
+            string prova = Equazioni.EquationDegree1(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+        [TestMethod]
+        public void TestEquationDegree3()
+        {
+            double a = 1;
+            double b = -3;
+            double c = 2;
+            string valore_aspettato = ($"{2} {1}");
+            string prova = Equazioni.EquationDegree1(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+
     }
 }
