@@ -81,8 +81,8 @@ namespace EquazioniLibrary.Test
             double a = 1;
             double b = -3;
             double c = 2;
-            string valore_aspettato = ($"{2} {1}");         
-            string prova = Equazioni.result(a, b, c);
+            string valore_aspettato = ($"x1={2} x2={1}");         
+            string prova = Equazioni.Result(a, b, c);
             Assert.AreEqual(valore_aspettato, prova);          
         }
         [TestMethod]

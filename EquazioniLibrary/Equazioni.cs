@@ -31,14 +31,14 @@ namespace EquazioniLibrary
             double delta = (b * b) - (4 * a * c);
             return delta;
         }
-        public static string result(double a, double b, double c)
+        public static string Result(double a, double b, double c)
         {
             
             double x1,x2;
             double delta = (b * b) - (4 * a * c);
              x1 = (-b + Math.Sqrt(delta)) / 2 * a;
              x2 = (-b - Math.Sqrt(delta)) / 2 * a;
-            return ($"{x1} {x2}");
+            return ($"x1={x1} x2={x2}");
         }
         public static string EquationDegree1(double a, double b, double c)
         {
@@ -62,7 +62,7 @@ namespace EquazioniLibrary
                     double delta = (b * b) - (4 * a * c);
                     x1 = (-b + Math.Sqrt(delta)) / 2 * a;
                     x2 = (-b - Math.Sqrt(delta)) / 2 * a;
-                    return ($"{x1} {x2}");
+                    return ($"x1={x1} x2={x2}");
                 }
             }
                                                  
