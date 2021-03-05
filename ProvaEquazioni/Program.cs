@@ -6,6 +6,8 @@ namespace ProvaEquazioni
     {
         static void Main(string[] args)
         {
+            //ho chiesto all'utente di scegliere un operazione dopo di che tramite uno switch case a seconda 
+            //dell'operazione che sceglieva venive eseguito un apposito metodo
             Console.WriteLine("che operazione vuoi eseguire:\n1-IsDetermined \n2-IsInconsisted \n3-IsDegree \n4-Delta \n5-result \n6-EqationDegree");
             Console.WriteLine("seleziona un operazione");
             string scelta = Console.ReadLine();
